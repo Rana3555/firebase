@@ -4,28 +4,29 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <!-- <ion-title>Sign in User</ion-title> -->
-    
+
   <!-- </ion-toolbar> -->
 </ion-header>
 
-<ion-content>
+<ion-content class="background-image">
+  <ion-card class="main-card">
+  <form>
   <div class="imgcontainer">
     <img src="../../assets/avatar-icon.svg" alt="Avatar" class="avatar">
     <ion-text color="success">
-      <h1 class="text-center" style="color:#25af12"><strong> Login</strong></h1>
+      <h1 class="text-center" style="color:#a5ce10"><strong> Login</strong></h1>
     </ion-text>
   </div>  
-  <ion-card>
-  <ion-item lines="full">
-    <ion-label position="floating">Email</ion-label>
+  <ion-item  lines="full" class="full-text line">
+    <ion-label position="floating">Email :</ion-label>
     <ion-input type="text" #email required></ion-input>
-  </ion-item>
+  </ion-item><br>
 
-  <ion-item lines="full">
-    <ion-label position="floating">Password</ion-label>
+  <ion-item class="line" lines="full">
+    <ion-label position="floating">Password :</ion-label>
     <ion-input type="password" #password required></ion-input>
   </ion-item>
-</ion-card>
+
 
   <ion-row>
     <ion-col>
@@ -44,8 +45,9 @@
       </ion-button>
     </ion-col>
   </ion-row>
+</form>
 
-  <ion-row>
+  <!-- <ion-row>
     <ion-col>
       <ion-button
         type="submit"
@@ -55,5 +57,6 @@
         Login with Google
       </ion-button>
     </ion-col>
-  </ion-row>
+  </ion-row> -->
+  </ion-card>
 </ion-content>
